@@ -25,6 +25,8 @@
 		32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1051817EFAC90006386A5 /* TRVSKitTests.m */; };
 		32D1051E17EFAE03006386A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D1051B17EFAE03006386A5 /* InfoPlist.strings */; };
 		32D1051F17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D1051D17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist */; };
+		32D1052117EFB016006386A5 /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1052017EFB016006386A5 /* TRVSColorTests.m */; };
+		32D1052317EFB020006386A5 /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1052217EFB020006386A5 /* TRVSStringTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		32D1051817EFAC90006386A5 /* TRVSKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSKitTests.m; sourceTree = "<group>"; };
 		32D1051C17EFAE03006386A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32D1051D17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TRVSKitExampleTests-Info.plist"; sourceTree = "<group>"; };
+		32D1052017EFB016006386A5 /* TRVSColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSColorTests.m; sourceTree = "<group>"; };
+		32D1052217EFB020006386A5 /* TRVSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSStringTests.m; sourceTree = "<group>"; };
 		32F12CFB17ED27B2007C252E /* NSString+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TRVSKit.h"; sourceTree = "<group>"; };
 		32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				32D1051817EFAC90006386A5 /* TRVSKitTests.m */,
+				32D1052017EFB016006386A5 /* TRVSColorTests.m */,
+				32D1052217EFB020006386A5 /* TRVSStringTests.m */,
 			);
 			path = TRVSKitTests;
 			sourceTree = "<group>";
@@ -279,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D1052117EFB016006386A5 /* TRVSColorTests.m in Sources */,
 				32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */,
+				32D1052317EFB020006386A5 /* TRVSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
