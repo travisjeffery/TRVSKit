@@ -21,7 +21,9 @@
 		32AF458417ECE70000E6664D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456717ECE70000E6664D /* UIKit.framework */; };
 		32AF458517ECE70000E6664D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456917ECE70000E6664D /* CoreData.framework */; };
 		32AF458D17ECE70000E6664D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32AF458B17ECE70000E6664D /* InfoPlist.strings */; };
-		32AF458F17ECE70000E6664D /* TRVSKitExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF458E17ECE70000E6664D /* TRVSKitExampleTests.m */; };
+		32D1051517EFAC12006386A5 /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */; };
+		32D1051617EFAC16006386A5 /* UIColor+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF455B17ECE6AD00E6664D /* UIColor+TRVSKit.m */; };
+		32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1051817EFAC90006386A5 /* TRVSKitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +56,7 @@
 		32AF458117ECE70000E6664D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		32AF458A17ECE70000E6664D /* TRVSKitExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TRVSKitExampleTests-Info.plist"; sourceTree = "<group>"; };
 		32AF458C17ECE70000E6664D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		32AF458E17ECE70000E6664D /* TRVSKitExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRVSKitExampleTests.m; sourceTree = "<group>"; };
+		32D1051817EFAC90006386A5 /* TRVSKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSKitTests.m; sourceTree = "<group>"; };
 		32F12CFB17ED27B2007C252E /* NSString+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TRVSKit.h"; sourceTree = "<group>"; };
 		32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				32AF455917ECE6AD00E6664D /* TRVSKit */,
+				32D1051717EFAC90006386A5 /* TRVSKitTests */,
 				32AF456B17ECE70000E6664D /* TRVSKitExample */,
 				32AF458817ECE70000E6664D /* TRVSKitExampleTests */,
 				32AF456217ECE70000E6664D /* Frameworks */,
@@ -154,7 +157,6 @@
 		32AF458817ECE70000E6664D /* TRVSKitExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				32AF458E17ECE70000E6664D /* TRVSKitExampleTests.m */,
 				32AF458917ECE70000E6664D /* Supporting Files */,
 			);
 			path = TRVSKitExampleTests;
@@ -167,6 +169,14 @@
 				32AF458B17ECE70000E6664D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32D1051717EFAC90006386A5 /* TRVSKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				32D1051817EFAC90006386A5 /* TRVSKitTests.m */,
+			);
+			path = TRVSKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +226,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					32AF457F17ECE70000E6664D = {
-						TestTargetID = 32AF455F17ECE70000E6664D /* TRVSKitExample */;
+						TestTargetID = 32AF455F17ECE70000E6664D;
 					};
 				};
 			};
@@ -263,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D1051617EFAC16006386A5 /* UIColor+TRVSKit.m in Sources */,
 				32AF457917ECE70000E6664D /* TRVSKitExample.xcdatamodeld in Sources */,
 				32AF457217ECE70000E6664D /* main.m in Sources */,
 				32AF457617ECE70000E6664D /* TRVSAppDelegate.m in Sources */,
+				32D1051517EFAC12006386A5 /* NSString+TRVSKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AF458F17ECE70000E6664D /* TRVSKitExampleTests.m in Sources */,
+				32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
