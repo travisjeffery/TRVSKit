@@ -23,8 +23,6 @@
 		32D1051517EFAC12006386A5 /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */; };
 		32D1051617EFAC16006386A5 /* UIColor+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF455B17ECE6AD00E6664D /* UIColor+TRVSKit.m */; };
 		32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1051817EFAC90006386A5 /* TRVSKitTests.m */; };
-		32D1051E17EFAE03006386A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32D1051B17EFAE03006386A5 /* InfoPlist.strings */; };
-		32D1051F17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D1051D17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist */; };
 		32D1052117EFB016006386A5 /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1052017EFB016006386A5 /* TRVSColorTests.m */; };
 		32D1052317EFB020006386A5 /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1052217EFB020006386A5 /* TRVSStringTests.m */; };
 /* End PBXBuildFile section */
@@ -225,7 +223,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					32AF457F17ECE70000E6664D = {
-						TestTargetID = 32AF455F17ECE70000E6664D /* TRVSKitExample */;
+						TestTargetID = 32AF455F17ECE70000E6664D;
 					};
 				};
 			};
@@ -261,8 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32D1051E17EFAE03006386A5 /* InfoPlist.strings in Resources */,
-				32D1051F17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
