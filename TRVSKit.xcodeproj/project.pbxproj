@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329D292E17EFEB7B004C255E /* UICollectionView+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 329D292D17EFEB7B004C255E /* UICollectionView+TRVSKit.m */; };
+		329D293017EFEC1B004C255E /* TRVSCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 329D292F17EFEC1B004C255E /* TRVSCollectionViewTests.m */; };
 		32AF456417ECE70000E6664D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456317ECE70000E6664D /* Foundation.framework */; };
 		32AF456617ECE70000E6664D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456517ECE70000E6664D /* CoreGraphics.framework */; };
 		32AF456817ECE70000E6664D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456717ECE70000E6664D /* UIKit.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		329D292C17EFEB7B004C255E /* UICollectionView+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+TRVSKit.h"; sourceTree = "<group>"; };
+		329D292D17EFEB7B004C255E /* UICollectionView+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+TRVSKit.m"; sourceTree = "<group>"; };
+		329D292F17EFEC1B004C255E /* TRVSCollectionViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSCollectionViewTests.m; sourceTree = "<group>"; };
 		32AF455A17ECE6AD00E6664D /* UIColor+TRVSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+TRVSKit.h"; sourceTree = "<group>"; };
 		32AF455B17ECE6AD00E6664D /* UIColor+TRVSKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TRVSKit.m"; sourceTree = "<group>"; };
 		32AF456017ECE70000E6664D /* TRVSKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRVSKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +113,8 @@
 				32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */,
 				32AF455A17ECE6AD00E6664D /* UIColor+TRVSKit.h */,
 				32AF455B17ECE6AD00E6664D /* UIColor+TRVSKit.m */,
+				329D292C17EFEB7B004C255E /* UICollectionView+TRVSKit.h */,
+				329D292D17EFEB7B004C255E /* UICollectionView+TRVSKit.m */,
 			);
 			path = TRVSKit;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				32D1051817EFAC90006386A5 /* TRVSKitTests.m */,
 				32D1052017EFB016006386A5 /* TRVSColorTests.m */,
 				32D1052217EFB020006386A5 /* TRVSStringTests.m */,
+				329D292F17EFEC1B004C255E /* TRVSCollectionViewTests.m */,
 			);
 			path = TRVSKitTests;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 				32AF457917ECE70000E6664D /* TRVSKitExample.xcdatamodeld in Sources */,
 				32AF457217ECE70000E6664D /* main.m in Sources */,
 				32AF457617ECE70000E6664D /* TRVSAppDelegate.m in Sources */,
+				329D292E17EFEB7B004C255E /* UICollectionView+TRVSKit.m in Sources */,
 				32D1051517EFAC12006386A5 /* NSString+TRVSKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D1052117EFB016006386A5 /* TRVSColorTests.m in Sources */,
+				329D293017EFEC1B004C255E /* TRVSCollectionViewTests.m in Sources */,
 				32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */,
 				32D1052317EFB020006386A5 /* TRVSStringTests.m in Sources */,
 			);
