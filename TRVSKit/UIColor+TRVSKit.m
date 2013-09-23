@@ -9,15 +9,19 @@
 #import "UIColor+TRVSKit.h"
 
 @interface NSString (TRVSKitPrivate)
+
 - (NSUInteger)trvs_hexValue;
+
 @end
 
 @implementation NSString (TRVSKitPrivate)
+
 - (NSUInteger)trvs_hexValue {
 	NSUInteger result = 0;
 	sscanf([self UTF8String], "%x", &result);
 	return result;
 }
+
 @end
 
 @implementation UIColor (TRVSKit)

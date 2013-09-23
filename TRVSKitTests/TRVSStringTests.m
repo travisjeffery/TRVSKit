@@ -23,7 +23,7 @@
     [super tearDown];
 }
 
-- (void)testTrimmingString {
+- (void)testTrimmingWhitespace {
     XCTAssertEqualObjects(@"hello, world", [@"   hello, world\n  " trvs_stringByTrimmingWhitespace]);
 }
 
