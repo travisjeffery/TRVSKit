@@ -16,4 +16,8 @@
     return [NSIndexPath indexPathForItem:item inSection:section];
 }
 
+- (void)trvs_scrollToBottomAnimated:(BOOL)animated {
+    [self scrollToItemAtIndexPath:[self trvs_lastIndexPath] atScrollPosition:UICollectionViewScrollPositionBottom animated:animated];
+}
+
 @end

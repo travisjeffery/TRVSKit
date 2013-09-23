@@ -231,7 +231,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					32AF457F17ECE70000E6664D = {
-						TestTargetID = 32AF455F17ECE70000E6664D;
+						TestTargetID = 32AF455F17ECE70000E6664D /* TRVSKitExample */;
 					};
 				};
 			};
