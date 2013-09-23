@@ -35,4 +35,13 @@
     XCTAssertEqualObjects(actual, expected);
 }
 
+- (void)testRGBA {
+    CGFloat red = .2f, blue = .3f, green = .4f, alpha = .5f;
+    UIColor *color = [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    XCTAssertEqual(red, [color trvs_red]);
+    XCTAssertEqual(blue, [color trvs_blue]);
+    XCTAssertEqual(green, [color trvs_green]);
+    XCTAssertEqual(alpha, [color trvs_alpha]);
+}
+
 @end
