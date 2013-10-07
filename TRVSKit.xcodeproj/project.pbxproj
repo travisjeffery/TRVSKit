@@ -22,6 +22,7 @@
 		32AF458317ECE70000E6664D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456317ECE70000E6664D /* Foundation.framework */; };
 		32AF458417ECE70000E6664D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456717ECE70000E6664D /* UIKit.framework */; };
 		32AF458517ECE70000E6664D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AF456917ECE70000E6664D /* CoreData.framework */; };
+		32BF99B717FE6A6C001E2C42 /* TRVSLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BF99B617FE6A6C001E2C42 /* TRVSLabeledTextField.m */; };
 		32D1051517EFAC12006386A5 /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */; };
 		32D1051617EFAC16006386A5 /* UIColor+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF455B17ECE6AD00E6664D /* UIColor+TRVSKit.m */; };
 		32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1051817EFAC90006386A5 /* TRVSKitTests.m */; };
@@ -60,6 +61,8 @@
 		32AF457A17ECE70000E6664D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32AF458017ECE70000E6664D /* TRVSKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRVSKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AF458117ECE70000E6664D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		32BF99B517FE6A6C001E2C42 /* TRVSLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSLabeledTextField.h; sourceTree = "<group>"; };
+		32BF99B617FE6A6C001E2C42 /* TRVSLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLabeledTextField.m; sourceTree = "<group>"; };
 		32D1051817EFAC90006386A5 /* TRVSKitTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSKitTests.m; sourceTree = "<group>"; };
 		32D1051C17EFAE03006386A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32D1051D17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TRVSKitExampleTests-Info.plist"; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				32AF455B17ECE6AD00E6664D /* UIColor+TRVSKit.m */,
 				329D292C17EFEB7B004C255E /* UICollectionView+TRVSKit.h */,
 				329D292D17EFEB7B004C255E /* UICollectionView+TRVSKit.m */,
+				32BF99B517FE6A6C001E2C42 /* TRVSLabeledTextField.h */,
+				32BF99B617FE6A6C001E2C42 /* TRVSLabeledTextField.m */,
 			);
 			path = TRVSKit;
 			sourceTree = "<group>";
@@ -231,7 +236,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					32AF457F17ECE70000E6664D = {
-						TestTargetID = 32AF455F17ECE70000E6664D /* TRVSKitExample */;
+						TestTargetID = 32AF455F17ECE70000E6664D;
 					};
 				};
 			};
@@ -282,6 +287,7 @@
 				32AF457217ECE70000E6664D /* main.m in Sources */,
 				32AF457617ECE70000E6664D /* TRVSAppDelegate.m in Sources */,
 				329D292E17EFEB7B004C255E /* UICollectionView+TRVSKit.m in Sources */,
+				32BF99B717FE6A6C001E2C42 /* TRVSLabeledTextField.m in Sources */,
 				32D1051517EFAC12006386A5 /* NSString+TRVSKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
