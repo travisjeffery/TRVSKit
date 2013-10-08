@@ -29,6 +29,7 @@
 		32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1051817EFAC90006386A5 /* TRVSKitTests.m */; };
 		32D1052117EFB016006386A5 /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1052017EFB016006386A5 /* TRVSColorTests.m */; };
 		32D1052317EFB020006386A5 /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D1052217EFB020006386A5 /* TRVSStringTests.m */; };
+		32EFAAD21803FAD6002359ED /* TRVSDelegateProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EFAAD11803FAD6002359ED /* TRVSDelegateProxyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		32D1051D17EFAE03006386A5 /* TRVSKitExampleTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TRVSKitExampleTests-Info.plist"; sourceTree = "<group>"; };
 		32D1052017EFB016006386A5 /* TRVSColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSColorTests.m; sourceTree = "<group>"; };
 		32D1052217EFB020006386A5 /* TRVSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSStringTests.m; sourceTree = "<group>"; };
+		32EFAAD11803FAD6002359ED /* TRVSDelegateProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSDelegateProxyTests.m; sourceTree = "<group>"; };
 		32F12CFB17ED27B2007C252E /* NSString+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TRVSKit.h"; sourceTree = "<group>"; };
 		32F12CFC17ED27B2007C252E /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +183,7 @@
 				32D1052017EFB016006386A5 /* TRVSColorTests.m */,
 				32D1052217EFB020006386A5 /* TRVSStringTests.m */,
 				329D292F17EFEC1B004C255E /* TRVSCollectionViewTests.m */,
+				32EFAAD11803FAD6002359ED /* TRVSDelegateProxyTests.m */,
 			);
 			path = TRVSKitTests;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				32D1052117EFB016006386A5 /* TRVSColorTests.m in Sources */,
 				329D293017EFEC1B004C255E /* TRVSCollectionViewTests.m in Sources */,
 				32D1051917EFAC90006386A5 /* TRVSKitTests.m in Sources */,
+				32EFAAD21803FAD6002359ED /* TRVSDelegateProxyTests.m in Sources */,
 				32D1052317EFB020006386A5 /* TRVSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,8 +30,7 @@
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
     __block NSMethodSignature *signature;
-    [self.delegates enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        id delegate = [obj nonretainedObjectValue];
+    [self.delegates enumerateObjectsUsingBlock:^(id delegate, NSUInteger idx, BOOL *stop) {
         signature = [[delegate class] instanceMethodSignatureForSelector:sel];
         if (signature) *stop = YES;
     }];
@@ -42,8 +41,7 @@
     NSString *returnType = [NSString stringWithCString:invocation.methodSignature.methodReturnType encoding:NSUTF8StringEncoding];
     BOOL voidReturnType = [returnType isEqualToString:@"v"];
     
-    [self.delegates enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        id delegate = [obj nonretainedObjectValue];
+    [self.delegates enumerateObjectsUsingBlock:^(id delegate, NSUInteger idx, BOOL *stop) {
         if ([delegate respondsToSelector:invocation.selector]) {
             [invocation invokeWithTarget:delegate];
             if (!voidReturnType) *stop = YES;
@@ -53,8 +51,7 @@
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     __block BOOL responds = NO;
-    [self.delegates enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        id delegate = [obj nonretainedObjectValue];
+    [self.delegates enumerateObjectsUsingBlock:^(id delegate, NSUInteger idx, BOOL *stop) {
         if ([delegate respondsToSelector:aSelector]) {
             responds = YES;
             *stop = YES;
