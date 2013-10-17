@@ -17,6 +17,7 @@
 }
 
 - (void)trvs_scrollToBottomAnimated:(BOOL)animated {
+    if (!self.numberOfSections) return;
     [self scrollToItemAtIndexPath:[self trvs_lastIndexPath] atScrollPosition:UICollectionViewScrollPositionBottom animated:animated];
 }
 
