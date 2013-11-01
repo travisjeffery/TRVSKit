@@ -6,8 +6,6 @@
 //
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UICollectionView (TRVSKit)
 
 - (NSIndexPath *)trvs_lastIndexPath;

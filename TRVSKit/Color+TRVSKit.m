@@ -1,12 +1,13 @@
 //
-//  UIColor+TRVSKit.m
+//  PlatformColor+TRVSKit.m
 //  TRVSKit
 //
-//  Created by Travis Jeffery on 9/20/13.
+//  Created by Travis Jeffery on 11/1/13.
 //
 //
 
-#import "UIColor+TRVSKit.h"
+
+#import "Color+TRVSKit.h"
 
 @interface NSString (TRVSKitPrivate)
 
@@ -24,36 +25,36 @@
 
 @end
 
-@implementation UIColor (TRVSKit)
+@implementation PlatformColor (TRVSKit)
 
-+ (UIColor *)trvs_colorWithHexString:(NSString *)hexString {
++ (PlatformColor *)trvs_colorWithHexString:(NSString *)hexString {
 	if ([hexString hasPrefix:@"#"]) {
 		hexString = [hexString substringFromIndex:1];
 	} else if ([hexString hasPrefix:@"0x"]) {
 		hexString = [hexString substringFromIndex:2];
 	}
-
+    
 	NSUInteger length = [hexString length];
 	if (length != 3 && length != 6 && length != 8) {
 		return nil;
 	}
-
+    
     if (length == 3) {
         NSString *r = [hexString substringWithRange:NSMakeRange(0, 1)];
         NSString *g = [hexString substringWithRange:NSMakeRange(1, 1)];
         NSString *b = [hexString substringWithRange:NSMakeRange(2, 1)];
         hexString = [NSString stringWithFormat:@"%@%@%@%@%@%@ff",
-                                               r, r, g, g, b, b];
+                     r, r, g, g, b, b];
     } else if (length == 6) {
 		hexString = [hexString stringByAppendingString:@"ff"];
 	}
-
+    
 	CGFloat red = [[hexString substringWithRange:NSMakeRange(0, 2)] trvs_hexValue] / 255.0f;
 	CGFloat green = [[hexString substringWithRange:NSMakeRange(2, 2)] trvs_hexValue] / 255.0f;
 	CGFloat blue = [[hexString substringWithRange:NSMakeRange(4, 2)] trvs_hexValue] / 255.0f;
 	CGFloat alpha = [[hexString substringWithRange:NSMakeRange(6, 2)] trvs_hexValue] / 255.0f;
-
-	return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+    
+	return [PlatformColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
 - (CGFloat)trvs_red {
@@ -88,5 +89,6 @@
 - (CGFloat)trvs_alpha {
 	return CGColorGetAlpha(self.CGColor);
 }
+
 
 @end

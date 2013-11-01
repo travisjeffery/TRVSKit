@@ -1,0 +1,14 @@
+PODS:
+  - TRVSKit (0.0.1)
+
+DEPENDENCIES:
+  - TRVSKit (from `../`)
+
+EXTERNAL SOURCES:
+  TRVSKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TRVSKit: b8756afb597a4b7cba38607f4542ee4dfb0df706
+
+COCOAPODS: 0.27.1
