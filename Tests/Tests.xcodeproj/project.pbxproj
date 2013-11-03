@@ -17,12 +17,15 @@
 		324E54C0182461AD00E9AB2E /* iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54BF182461AD00E9AB2E /* iOS_Tests.m */; };
 		324E54D2182463B500E9AB2E /* Color+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54C7182463B500E9AB2E /* Color+TRVSKit.m */; };
 		324E54D3182463B500E9AB2E /* Color+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54C7182463B500E9AB2E /* Color+TRVSKit.m */; };
-		324E54D4182463B500E9AB2E /* TRVSLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54CA182463B500E9AB2E /* TRVSLabeledTextField.m */; };
-		324E54D6182463B500E9AB2E /* UICollectionView+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54CC182463B500E9AB2E /* UICollectionView+TRVSKit.m */; };
 		324E54D8182463B500E9AB2E /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */; };
 		324E54D9182463B500E9AB2E /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */; };
-		324E54DA182463B500E9AB2E /* TRVSDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54D1182463B500E9AB2E /* TRVSDelegateProxy.m */; };
-		324E54DB182463B500E9AB2E /* TRVSDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54D1182463B500E9AB2E /* TRVSDelegateProxy.m */; };
+		324E54E71824657D00E9AB2E /* TRVSCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54E61824657D00E9AB2E /* TRVSCollectionViewTests.m */; };
+		324E54EE1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */; };
+		324E54EF1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */; };
+		324E54F01825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54EC1825DBFB00E9AB2E /* TRVSDelegateProxyTests.m */; };
+		324E54F11825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54EC1825DBFB00E9AB2E /* TRVSDelegateProxyTests.m */; };
+		324E54F21825DBFB00E9AB2E /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */; };
+		324E54F31825DBFB00E9AB2E /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */; };
 		B0B2F6929FB044D489F483C7 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F182131922944859349EE74 /* libPods-ios.a */; };
 		D3D3535E93574314A5054FA8 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A100098DB4C83A551E66F /* libPods-osx.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,10 @@
 		324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
 		324E54D0182463B500E9AB2E /* TRVSDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSDelegateProxy.h; sourceTree = "<group>"; };
 		324E54D1182463B500E9AB2E /* TRVSDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSDelegateProxy.m; sourceTree = "<group>"; };
+		324E54E61824657D00E9AB2E /* TRVSCollectionViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSCollectionViewTests.m; sourceTree = "<group>"; };
+		324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSColorTests.m; sourceTree = "<group>"; };
+		324E54EC1825DBFB00E9AB2E /* TRVSDelegateProxyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSDelegateProxyTests.m; sourceTree = "<group>"; };
+		324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSStringTests.m; sourceTree = "<group>"; };
 		85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
 		D726ACD03BB447DE933440D3 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		F16A100098DB4C83A551E66F /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +91,7 @@
 		324E54931824619800E9AB2E = {
 			isa = PBXGroup;
 			children = (
-				324E54C5182463B500E9AB2E /* TRVSKit */,
+				324E54EA1825DBFB00E9AB2E /* Tests */,
 				324E54A3182461A200E9AB2E /* OSX Tests */,
 				324E54B9182461AD00E9AB2E /* iOS Tests */,
 				324E54A0182461A200E9AB2E /* Frameworks */,
@@ -106,6 +113,7 @@
 		324E54A0182461A200E9AB2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				324E54C5182463B500E9AB2E /* TRVSKit */,
 				324E54A1182461A200E9AB2E /* XCTest.framework */,
 				324E54B5182461AD00E9AB2E /* Foundation.framework */,
 				324E54B7182461AD00E9AB2E /* UIKit.framework */,
@@ -138,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				324E54BF182461AD00E9AB2E /* iOS_Tests.m */,
+				324E54E61824657D00E9AB2E /* TRVSCollectionViewTests.m */,
 				324E54BA182461AD00E9AB2E /* Supporting Files */,
 			);
 			path = "iOS Tests";
@@ -186,6 +195,16 @@
 			);
 			path = OSX;
 			sourceTree = "<group>";
+		};
+		324E54EA1825DBFB00E9AB2E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */,
+				324E54EC1825DBFB00E9AB2E /* TRVSDelegateProxyTests.m */,
+				324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -341,12 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324E54D6182463B500E9AB2E /* UICollectionView+TRVSKit.m in Sources */,
+				324E54EE1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
 				324E54AA182461A200E9AB2E /* OSX_Tests.m in Sources */,
-				324E54DA182463B500E9AB2E /* TRVSDelegateProxy.m in Sources */,
-				324E54D4182463B500E9AB2E /* TRVSLabeledTextField.m in Sources */,
 				324E54D8182463B500E9AB2E /* NSString+TRVSKit.m in Sources */,
+				324E54F01825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
 				324E54D2182463B500E9AB2E /* Color+TRVSKit.m in Sources */,
+				324E54F21825DBFB00E9AB2E /* TRVSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +373,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324E54F11825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
 				324E54C0182461AD00E9AB2E /* iOS_Tests.m in Sources */,
-				324E54DB182463B500E9AB2E /* TRVSDelegateProxy.m in Sources */,
+				324E54EF1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
 				324E54D9182463B500E9AB2E /* NSString+TRVSKit.m in Sources */,
+				324E54E71824657D00E9AB2E /* TRVSCollectionViewTests.m in Sources */,
 				324E54D3182463B500E9AB2E /* Color+TRVSKit.m in Sources */,
+				324E54F31825DBFB00E9AB2E /* TRVSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
