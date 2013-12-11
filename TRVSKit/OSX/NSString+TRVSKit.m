@@ -10,6 +10,22 @@
 
 @implementation NSString (TRVSKit)
 
+- (NSString *)trvs_stringByEscapingEntities {
+    return (__bridge_transfer NSString *)(CFXMLCreateStringByEscapingEntities(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL));
+}
+
+- (NSString *)trvs_stringWithLinks {
+    NSMutableString *linkedString = [self mutableCopy];
+    NSDataDetector *detector = [NSDataDetector dataDetectorWithTypes:NSTextCheckingTypeLink error:nil];
+    [detector enumerateMatchesInString:self options:0 range:NSMakeRange(0, self.length) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop) {
+        if (match.URL) {
+            NSString *link = [NSString stringWithFormat:@"<a href=\"%@\">%@</a>", match.URL.absoluteString, match.URL.absoluteString];
+            [linkedString replaceCharactersInRange:match.range withString:link];
+        }
+    }];
+    return linkedString;
+}
+
 - (NSString *)trvs_stringByTrimmingWhitespace {
     return [[self trvs_stringByTrimmingLeadingWhitespaceAndNewlineCharacters]
                   trvs_stringByTrimmingTrailingWhitespaceAndNewlineCharacters];
@@ -46,6 +62,54 @@
     return [self substringFromIndex:rangeOfFirstWantedCharacter.location];
 }
 
+CFStringRef CFXMLCreateStringByEscapingEntities(CFAllocatorRef allocator, CFStringRef string, CFDictionaryRef entitiesDictionary) {
+    CFMutableStringRef escapedString = CFStringCreateMutable(allocator, 0);
+    CFMutableCharacterSetRef startChars = CFCharacterSetCreateMutable(allocator);
+    
+    CFStringInlineBuffer inlineBuffer;
+    CFIndex index = 0;
+    CFIndex loc = index;
+    CFIndex stringLength = CFStringGetLength(string);
+    UniChar uchar;
+    
+    CFCharacterSetAddCharactersInString(startChars, CFSTR("&<>'\""));
+    
+    CFStringInitInlineBuffer(string, &inlineBuffer, CFRangeMake(0, stringLength));
+    for(index = 0; index < stringLength; index++) {
+        uchar = CFStringGetCharacterFromInlineBuffer(&inlineBuffer, index);
+        if(CFCharacterSetIsCharacterMember(startChars, uchar)) {
+            CFStringRef previousSubstring = CFStringCreateWithSubstring(allocator, string, CFRangeMake(loc, index - loc));
+            CFStringAppend(escapedString, previousSubstring);
+            CFRelease(previousSubstring);
+            switch(uchar) {
+                case '&':
+                    CFStringAppend(escapedString, CFSTR("&amp;"));
+                    break;
+                case '<':
+                    CFStringAppend(escapedString, CFSTR("&lt;"));
+                    break;
+                case '>':
+                    CFStringAppend(escapedString, CFSTR("&gt;"));
+                    break;
+                case '\'':
+                    CFStringAppend(escapedString, CFSTR("&apos;"));
+                    break;
+                case '"':
+                    CFStringAppend(escapedString, CFSTR("&quot;"));
+                    break;
+            }
+            loc = index + 1;
+        }
+    }
 
+    CFStringRef remainder = CFStringCreateWithSubstring(allocator, string, CFRangeMake(loc, index - loc));
+    if (NULL != remainder) {
+        CFStringAppend(escapedString, remainder);
+        CFRelease(remainder);
+    }
+    
+    CFRelease(startChars);
+    return escapedString;
+}
 
 @end

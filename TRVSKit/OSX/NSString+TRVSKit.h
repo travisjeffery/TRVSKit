@@ -11,5 +11,7 @@
 @interface NSString (TRVSKit)
 
 - (NSString *)trvs_stringByTrimmingWhitespace;
+- (NSString *)trvs_stringByEscapingEntities;
+- (NSString *)trvs_stringWithLinks;
 
 @end
