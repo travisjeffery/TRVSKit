@@ -17,8 +17,6 @@
 		324E54C0182461AD00E9AB2E /* iOS_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54BF182461AD00E9AB2E /* iOS_Tests.m */; };
 		324E54D2182463B500E9AB2E /* Color+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54C7182463B500E9AB2E /* Color+TRVSKit.m */; };
 		324E54D3182463B500E9AB2E /* Color+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54C7182463B500E9AB2E /* Color+TRVSKit.m */; };
-		324E54D8182463B500E9AB2E /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */; };
-		324E54D9182463B500E9AB2E /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */; };
 		324E54E71824657D00E9AB2E /* TRVSCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54E61824657D00E9AB2E /* TRVSCollectionViewTests.m */; };
 		324E54EE1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */; };
 		324E54EF1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */; };
@@ -27,6 +25,8 @@
 		324E54F21825DBFB00E9AB2E /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */; };
 		324E54F31825DBFB00E9AB2E /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */; };
 		32C68AEC18583133009C8C1F /* NSScrollView+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68AEB18583133009C8C1F /* NSScrollView+TRVSKit.m */; };
+		32C68AEF18590A07009C8C1F /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */; };
+		32C68AF018590A07009C8C1F /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */; };
 		B0B2F6929FB044D489F483C7 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F182131922944859349EE74 /* libPods-ios.a */; };
 		D3D3535E93574314A5054FA8 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A100098DB4C83A551E66F /* libPods-osx.a */; };
 /* End PBXBuildFile section */
@@ -52,8 +52,6 @@
 		324E54CA182463B500E9AB2E /* TRVSLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSLabeledTextField.m; sourceTree = "<group>"; };
 		324E54CB182463B500E9AB2E /* UICollectionView+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+TRVSKit.h"; sourceTree = "<group>"; };
 		324E54CC182463B500E9AB2E /* UICollectionView+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+TRVSKit.m"; sourceTree = "<group>"; };
-		324E54CE182463B500E9AB2E /* NSString+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TRVSKit.h"; sourceTree = "<group>"; };
-		324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
 		324E54D0182463B500E9AB2E /* TRVSDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVSDelegateProxy.h; sourceTree = "<group>"; };
 		324E54D1182463B500E9AB2E /* TRVSDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSDelegateProxy.m; sourceTree = "<group>"; };
 		324E54E61824657D00E9AB2E /* TRVSCollectionViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSCollectionViewTests.m; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSStringTests.m; sourceTree = "<group>"; };
 		32C68AEA18583133009C8C1F /* NSScrollView+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSScrollView+TRVSKit.h"; sourceTree = "<group>"; };
 		32C68AEB18583133009C8C1F /* NSScrollView+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScrollView+TRVSKit.m"; sourceTree = "<group>"; };
+		32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
+		32C68AEE18590A07009C8C1F /* NSString+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TRVSKit.h"; sourceTree = "<group>"; };
 		85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
 		D726ACD03BB447DE933440D3 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		F16A100098DB4C83A551E66F /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +168,8 @@
 		324E54C5182463B500E9AB2E /* TRVSKit */ = {
 			isa = PBXGroup;
 			children = (
+				32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */,
+				32C68AEE18590A07009C8C1F /* NSString+TRVSKit.h */,
 				324E54C6182463B500E9AB2E /* Color+TRVSKit.h */,
 				324E54C7182463B500E9AB2E /* Color+TRVSKit.m */,
 				324E54C8182463B500E9AB2E /* iOS */,
@@ -193,8 +195,6 @@
 		324E54CD182463B500E9AB2E /* OSX */ = {
 			isa = PBXGroup;
 			children = (
-				324E54CE182463B500E9AB2E /* NSString+TRVSKit.h */,
-				324E54CF182463B500E9AB2E /* NSString+TRVSKit.m */,
 				32C68AEA18583133009C8C1F /* NSScrollView+TRVSKit.h */,
 				32C68AEB18583133009C8C1F /* NSScrollView+TRVSKit.m */,
 			);
@@ -367,7 +367,7 @@
 			files = (
 				324E54EE1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
 				324E54AA182461A200E9AB2E /* OSX_Tests.m in Sources */,
-				324E54D8182463B500E9AB2E /* NSString+TRVSKit.m in Sources */,
+				32C68AEF18590A07009C8C1F /* NSString+TRVSKit.m in Sources */,
 				324E54F01825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
 				324E54D2182463B500E9AB2E /* Color+TRVSKit.m in Sources */,
 				32C68AEC18583133009C8C1F /* NSScrollView+TRVSKit.m in Sources */,
@@ -381,8 +381,8 @@
 			files = (
 				324E54F11825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
 				324E54C0182461AD00E9AB2E /* iOS_Tests.m in Sources */,
+				32C68AF018590A07009C8C1F /* NSString+TRVSKit.m in Sources */,
 				324E54EF1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
-				324E54D9182463B500E9AB2E /* NSString+TRVSKit.m in Sources */,
 				324E54E71824657D00E9AB2E /* TRVSCollectionViewTests.m in Sources */,
 				324E54D3182463B500E9AB2E /* Color+TRVSKit.m in Sources */,
 				324E54F31825DBFB00E9AB2E /* TRVSStringTests.m in Sources */,
