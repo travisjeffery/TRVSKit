@@ -34,13 +34,37 @@
     [second addDependency:first];
     
     [operationQueue addOperations:@[first, second] waitUntilFinished:NO];
-
+    
     [operationQueue trvs_addFrontMostOperationWithBlock:^{
         ++count;
     }];
-
+    
     [operationQueue setSuspended:NO];
     [operationQueue waitUntilAllOperationsAreFinished];
+}
+
+- (void)testFrontMostOperationOverridesExistingDependencies {
+    NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+    operationQueue.maxConcurrentOperationCount = 1;
+    [operationQueue setSuspended:YES];
+    TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:2];
+    
+    NSBlockOperation *first = [NSBlockOperation blockOperationWithBlock:^{
+        [monitor signal];
+    }];
+    
+    NSBlockOperation *second = [NSBlockOperation blockOperationWithBlock:^{
+        [monitor signal];
+    }];
+    
+    [second addDependency:first];
+    
+    [operationQueue trvs_addFrontMostOperation:first];
+    [operationQueue trvs_addFrontMostOperation:second];
+    
+    [operationQueue setSuspended:NO];
+    
+    XCTAssert([monitor wait]);
 }
 
 - (void)testFrontMostOperationAndWaitUntilFinished {

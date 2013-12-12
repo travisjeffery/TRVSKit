@@ -30,8 +30,13 @@
     @synchronized(self) {
         BOOL isSuspended = [self isSuspended];
         [self setSuspended:YES];
-        for (NSOperation *operation in self.operations)
-            if (!operation.isExecuting) [operation addDependency:frontMostOperation];
+        for (NSOperation *operation in self.operations) {
+            if (operation.isExecuting) continue;
+            if ([frontMostOperation.dependencies containsObject:operation]) {
+                [frontMostOperation removeDependency:operation];
+            }
+            [operation addDependency:frontMostOperation];
+        }
         [self setSuspended:isSuspended];
     }
 }
