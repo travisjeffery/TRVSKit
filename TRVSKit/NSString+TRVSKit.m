@@ -11,7 +11,7 @@
 @implementation NSString (TRVSKit)
 
 - (NSString *)trvs_stringByEscapingEntities {
-    return (__bridge_transfer NSString *)(CFXMLCreateStringByEscapingEntities(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL));
+    return (__bridge_transfer NSString *)(trvs_createStringByEscapingEntities(kCFAllocatorDefault, (__bridge CFStringRef)self, NULL));
 }
 
 - (NSString *)trvs_stringWithLinks {
@@ -62,7 +62,7 @@
     return [self substringFromIndex:rangeOfFirstWantedCharacter.location];
 }
 
-CFStringRef CFXMLCreateStringByEscapingEntities(CFAllocatorRef allocator, CFStringRef string, CFDictionaryRef entitiesDictionary) {
+CFStringRef trvs_createStringByEscapingEntities(CFAllocatorRef allocator, CFStringRef string, CFDictionaryRef entitiesDictionary) {
     CFMutableStringRef escapedString = CFStringCreateMutable(allocator, 0);
     CFMutableCharacterSetRef startChars = CFCharacterSetCreateMutable(allocator);
     
