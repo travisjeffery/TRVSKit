@@ -19,7 +19,7 @@
 
 - (NSUInteger)trvs_hexValue {
 	long result = 0;
-	sscanf([self UTF8String], "%ld", &result);
+	sscanf([self UTF8String], "%lx", &result);
 	return result;
 }
 
