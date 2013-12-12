@@ -42,17 +42,14 @@
 - (void)testFrontMostOperationAndWaitUntilFinished {
     NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
     [operationQueue setSuspended:YES];
-    TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:1];
     NSDate *startDate = [NSDate date];
     
     NSBlockOperation *waitOperation = [NSBlockOperation blockOperationWithBlock:^{
         sleep(1);
-        [monitor signal];
     }];
 
     [operationQueue setSuspended:NO];
     [operationQueue trvs_addFrontMostOperations:@[waitOperation] waitUntilFinished:YES];
-    XCTAssert([monitor wait]);
     
     NSTimeInterval timeInteval = [startDate timeIntervalSinceNow];
     XCTAssert(timeInteval <= -1.0);
