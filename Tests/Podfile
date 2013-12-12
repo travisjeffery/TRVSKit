@@ -1,5 +1,6 @@
 def import_pods
-  pod 'TRVSKit', :path => '../'
+  pod 'TRVSKit', :local => '../'
+  pod 'TRVSMonitor', '0.0.2'
 end
 
 target :ios do

@@ -1,14 +1,17 @@
 PODS:
-  - TRVSKit (0.0.1)
+  - TRVSKit (0.0.3)
+  - TRVSMonitor (0.0.2)
 
 DEPENDENCIES:
   - TRVSKit (from `../`)
+  - TRVSMonitor (= 0.0.2)
 
 EXTERNAL SOURCES:
   TRVSKit:
-    :path: ../
+    :local: ../
 
 SPEC CHECKSUMS:
-  TRVSKit: b8756afb597a4b7cba38607f4542ee4dfb0df706
+  TRVSKit: 4d27f3d347ac5645b16e1e041cab5af9f94d9f58
+  TRVSMonitor: c2960f87bb2a1b4d2f3fba17f61c1c5256860bd2
 
-COCOAPODS: 0.27.1
+COCOAPODS: 0.28.0
