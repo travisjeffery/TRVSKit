@@ -26,7 +26,10 @@
 		324E54F31825DBFB00E9AB2E /* TRVSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */; };
 		32C68AEC18583133009C8C1F /* NSScrollView+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68AEB18583133009C8C1F /* NSScrollView+TRVSKit.m */; };
 		32C68AEF18590A07009C8C1F /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */; };
-		32C68AF018590A07009C8C1F /* NSString+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */; };
+		32C68B0C18595275009C8C1F /* NSOperationQueue+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */; };
+		32C68B0D18595275009C8C1F /* NSOperationQueue+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */; };
+		32C68B0F18595826009C8C1F /* TRVSOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */; };
+		32C68B1018595826009C8C1F /* TRVSOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */; };
 		B0B2F6929FB044D489F483C7 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F182131922944859349EE74 /* libPods-ios.a */; };
 		D3D3535E93574314A5054FA8 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A100098DB4C83A551E66F /* libPods-osx.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,9 @@
 		32C68AEB18583133009C8C1F /* NSScrollView+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSScrollView+TRVSKit.m"; sourceTree = "<group>"; };
 		32C68AED18590A07009C8C1F /* NSString+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TRVSKit.m"; sourceTree = "<group>"; };
 		32C68AEE18590A07009C8C1F /* NSString+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TRVSKit.h"; sourceTree = "<group>"; };
+		32C68B0A18595275009C8C1F /* NSOperationQueue+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+TRVSKit.h"; sourceTree = "<group>"; };
+		32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+TRVSKit.m"; sourceTree = "<group>"; };
+		32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSOperationQueueTests.m; sourceTree = "<group>"; };
 		85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
 		D726ACD03BB447DE933440D3 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		F16A100098DB4C83A551E66F /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +182,8 @@
 				324E54CD182463B500E9AB2E /* OSX */,
 				324E54D0182463B500E9AB2E /* TRVSDelegateProxy.h */,
 				324E54D1182463B500E9AB2E /* TRVSDelegateProxy.m */,
+				32C68B0A18595275009C8C1F /* NSOperationQueue+TRVSKit.h */,
+				32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */,
 			);
 			name = TRVSKit;
 			path = ../TRVSKit;
@@ -207,6 +215,7 @@
 				324E54EB1825DBFB00E9AB2E /* TRVSColorTests.m */,
 				324E54EC1825DBFB00E9AB2E /* TRVSDelegateProxyTests.m */,
 				324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */,
+				32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */,
 			);
 			path = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -369,8 +378,10 @@
 				324E54AA182461A200E9AB2E /* OSX_Tests.m in Sources */,
 				32C68AEF18590A07009C8C1F /* NSString+TRVSKit.m in Sources */,
 				324E54F01825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
+				32C68B0F18595826009C8C1F /* TRVSOperationQueueTests.m in Sources */,
 				324E54D2182463B500E9AB2E /* Color+TRVSKit.m in Sources */,
 				32C68AEC18583133009C8C1F /* NSScrollView+TRVSKit.m in Sources */,
+				32C68B0C18595275009C8C1F /* NSOperationQueue+TRVSKit.m in Sources */,
 				324E54F21825DBFB00E9AB2E /* TRVSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +392,11 @@
 			files = (
 				324E54F11825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
 				324E54C0182461AD00E9AB2E /* iOS_Tests.m in Sources */,
-				32C68AF018590A07009C8C1F /* NSString+TRVSKit.m in Sources */,
 				324E54EF1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
+				32C68B1018595826009C8C1F /* TRVSOperationQueueTests.m in Sources */,
 				324E54E71824657D00E9AB2E /* TRVSCollectionViewTests.m in Sources */,
 				324E54D3182463B500E9AB2E /* Color+TRVSKit.m in Sources */,
+				32C68B0D18595275009C8C1F /* NSOperationQueue+TRVSKit.m in Sources */,
 				324E54F31825DBFB00E9AB2E /* TRVSStringTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
