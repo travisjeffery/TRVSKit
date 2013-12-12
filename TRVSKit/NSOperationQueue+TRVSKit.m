@@ -30,12 +30,8 @@
     @synchronized(self) {
         BOOL isSuspended = [self isSuspended];
         [self setSuspended:YES];
-        NSInteger maxOperations = self.maxConcurrentOperationCount != NSOperationQueueDefaultMaxConcurrentOperationCount ? self.maxConcurrentOperationCount : NSIntegerMax;
-        NSInteger index = self.operations.count - maxOperations;
-        if (index >= 0) {
-            NSOperation *operation = self.operations[index];
+        for (NSOperation *operation in self.operations)
             if (!operation.isExecuting) [operation addDependency:frontMostOperation];
-        }
         [self setSuspended:isSuspended];
     }
 }

@@ -22,21 +22,25 @@
     [operationQueue setSuspended:YES];
     __block NSInteger count = 0;
 
-    TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:2];
-    
-    [operationQueue addOperationWithBlock:^{
+    NSBlockOperation *first = [NSBlockOperation blockOperationWithBlock:^{
         XCTAssert(count == 1);
-        [monitor signal];
+        ++count;
     }];
     
+    NSBlockOperation *second = [NSBlockOperation blockOperationWithBlock:^{
+        XCTAssert(count == 2);
+    }];
+    
+    [second addDependency:first];
+    
+    [operationQueue addOperations:@[first, second] waitUntilFinished:NO];
+
     [operationQueue trvs_addFrontMostOperationWithBlock:^{
         ++count;
-        [monitor signal];
     }];
-    
+
     [operationQueue setSuspended:NO];
-    
-    XCTAssert([monitor wait]);
+    [operationQueue waitUntilAllOperationsAreFinished];
 }
 
 - (void)testFrontMostOperationAndWaitUntilFinished {
