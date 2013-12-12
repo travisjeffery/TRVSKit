@@ -18,8 +18,8 @@
 @implementation NSString (TRVSKitPrivate)
 
 - (NSUInteger)trvs_hexValue {
-	NSUInteger result = 0;
-	sscanf([self UTF8String], "%x", &result);
+	long result = 0;
+	sscanf([self UTF8String], "%ld", &result);
 	return result;
 }
 
