@@ -31,6 +31,12 @@
                   trvs_stringByTrimmingTrailingWhitespaceAndNewlineCharacters];
 }
 
+- (NSString *)trvs_stringByJSONSerializingWithKey:(NSString *)key {
+    return [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:@{key:self} options:0 error:NULL] encoding:NSUTF8StringEncoding];
+}
+
+#pragma mark - Private
+
 - (NSString *)trvs_stringByTrimmingTrailingWhitespaceAndNewlineCharacters {
     return [self trvs_stringByTrimmingTrailingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }

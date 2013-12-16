@@ -13,5 +13,6 @@
 - (NSString *)trvs_stringByTrimmingWhitespace;
 - (NSString *)trvs_stringByEscapingEntities;
 - (NSString *)trvs_stringWithLinks;
+- (NSString *)trvs_stringByJSONSerializingWithKey:(NSString *)key;
 
 @end
