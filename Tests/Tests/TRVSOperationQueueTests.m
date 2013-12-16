@@ -67,6 +67,31 @@
     XCTAssert([monitor wait]);
 }
 
+- (void)multipleFrontMostOperationsAdded {
+    NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
+    operationQueue.maxConcurrentOperationCount = 1;
+    [operationQueue setSuspended:YES];
+    __block NSInteger count = 0;
+    TRVSMonitor *monitor = [[TRVSMonitor alloc] initWithExpectedSignalCount:2];
+    
+    NSBlockOperation *first = [NSBlockOperation blockOperationWithBlock:^{
+        XCTAssert(count == 1);
+        [monitor signal];
+    }];
+    
+    NSBlockOperation *second = [NSBlockOperation blockOperationWithBlock:^{
+        ++count;
+        [monitor signal];
+    }];
+    
+    [operationQueue trvs_addFrontMostOperation:first];
+    [operationQueue trvs_addFrontMostOperation:second];
+    
+    [operationQueue setSuspended:NO];
+    
+    XCTAssert([monitor wait]);
+}
+
 - (void)testFrontMostOperationAndWaitUntilFinished {
     NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
     [operationQueue setSuspended:YES];
