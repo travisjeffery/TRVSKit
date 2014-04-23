@@ -30,6 +30,10 @@
 		32C68B0D18595275009C8C1F /* NSOperationQueue+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */; };
 		32C68B0F18595826009C8C1F /* TRVSOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */; };
 		32C68B1018595826009C8C1F /* TRVSOperationQueueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */; };
+		32E2812619086C3800FB48D7 /* NSDictionary+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2812519086C3800FB48D7 /* NSDictionary+TRVSKit.m */; };
+		32E2812719086C3800FB48D7 /* NSDictionary+TRVSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2812519086C3800FB48D7 /* NSDictionary+TRVSKit.m */; };
+		32E2812919086C4A00FB48D7 /* TRVSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2812819086C4A00FB48D7 /* TRVSDictionaryTests.m */; };
+		32E2812A19086C4A00FB48D7 /* TRVSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E2812819086C4A00FB48D7 /* TRVSDictionaryTests.m */; };
 		B0B2F6929FB044D489F483C7 /* libPods-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F182131922944859349EE74 /* libPods-ios.a */; };
 		D3D3535E93574314A5054FA8 /* libPods-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F16A100098DB4C83A551E66F /* libPods-osx.a */; };
 /* End PBXBuildFile section */
@@ -68,6 +72,9 @@
 		32C68B0A18595275009C8C1F /* NSOperationQueue+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOperationQueue+TRVSKit.h"; sourceTree = "<group>"; };
 		32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSOperationQueue+TRVSKit.m"; sourceTree = "<group>"; };
 		32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSOperationQueueTests.m; sourceTree = "<group>"; };
+		32E2812419086C3800FB48D7 /* NSDictionary+TRVSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TRVSKit.h"; sourceTree = "<group>"; };
+		32E2812519086C3800FB48D7 /* NSDictionary+TRVSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TRVSKit.m"; sourceTree = "<group>"; };
+		32E2812819086C4A00FB48D7 /* TRVSDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVSDictionaryTests.m; sourceTree = "<group>"; };
 		85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.xcconfig"; path = "Pods/Pods-ios.xcconfig"; sourceTree = "<group>"; };
 		D726ACD03BB447DE933440D3 /* Pods-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-osx.xcconfig"; path = "Pods/Pods-osx.xcconfig"; sourceTree = "<group>"; };
 		F16A100098DB4C83A551E66F /* libPods-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +110,7 @@
 				324E54EA1825DBFB00E9AB2E /* Tests */,
 				324E54A3182461A200E9AB2E /* OSX Tests */,
 				324E54B9182461AD00E9AB2E /* iOS Tests */,
+				324E54C5182463B500E9AB2E /* TRVSKit */,
 				324E54A0182461A200E9AB2E /* Frameworks */,
 				324E549F182461A200E9AB2E /* Products */,
 				85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */,
@@ -122,7 +130,6 @@
 		324E54A0182461A200E9AB2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				324E54C5182463B500E9AB2E /* TRVSKit */,
 				324E54A1182461A200E9AB2E /* XCTest.framework */,
 				324E54B5182461AD00E9AB2E /* Foundation.framework */,
 				324E54B7182461AD00E9AB2E /* UIKit.framework */,
@@ -184,6 +191,8 @@
 				324E54D1182463B500E9AB2E /* TRVSDelegateProxy.m */,
 				32C68B0A18595275009C8C1F /* NSOperationQueue+TRVSKit.h */,
 				32C68B0B18595275009C8C1F /* NSOperationQueue+TRVSKit.m */,
+				32E2812419086C3800FB48D7 /* NSDictionary+TRVSKit.h */,
+				32E2812519086C3800FB48D7 /* NSDictionary+TRVSKit.m */,
 			);
 			name = TRVSKit;
 			path = ../TRVSKit;
@@ -216,6 +225,7 @@
 				324E54EC1825DBFB00E9AB2E /* TRVSDelegateProxyTests.m */,
 				324E54ED1825DBFB00E9AB2E /* TRVSStringTests.m */,
 				32C68B0E18595826009C8C1F /* TRVSOperationQueueTests.m */,
+				32E2812819086C4A00FB48D7 /* TRVSDictionaryTests.m */,
 			);
 			path = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -267,7 +277,7 @@
 		324E54941824619800E9AB2E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 			};
 			buildConfigurationList = 324E54971824619800E9AB2E /* Build configuration list for PBXProject "Tests" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -374,6 +384,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E2812619086C3800FB48D7 /* NSDictionary+TRVSKit.m in Sources */,
+				32E2812919086C4A00FB48D7 /* TRVSDictionaryTests.m in Sources */,
 				324E54EE1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
 				324E54AA182461A200E9AB2E /* OSX_Tests.m in Sources */,
 				32C68AEF18590A07009C8C1F /* NSString+TRVSKit.m in Sources */,
@@ -391,6 +403,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				324E54F11825DBFB00E9AB2E /* TRVSDelegateProxyTests.m in Sources */,
+				32E2812719086C3800FB48D7 /* NSDictionary+TRVSKit.m in Sources */,
+				32E2812A19086C4A00FB48D7 /* TRVSDictionaryTests.m in Sources */,
 				324E54C0182461AD00E9AB2E /* iOS_Tests.m in Sources */,
 				324E54EF1825DBFB00E9AB2E /* TRVSColorTests.m in Sources */,
 				32C68B1018595826009C8C1F /* TRVSOperationQueueTests.m in Sources */,
@@ -426,6 +440,7 @@
 		324E54981824619800E9AB2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -451,6 +466,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -498,6 +514,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -528,7 +545,6 @@
 			baseConfigurationReference = 85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -577,7 +593,6 @@
 			baseConfigurationReference = 85C9622ACF15428A9B93989D /* Pods-ios.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
