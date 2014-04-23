@@ -1,5 +1,5 @@
 def import_pods
-  pod 'TRVSKit', :local => '../'
+  pod 'TRVSKit', :path => '../'
   pod 'TRVSMonitor', '0.0.2'
 end
 
