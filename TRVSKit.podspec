@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/travisjeffery/TRVSKit.git", :tag => "0.0.7" }
   s.source_files  = 'TRVSKit', 'TRVSKit/*.{h,m}'
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '6.0'
   s.ios.source_files  = 'TRVSKit', 'TRVSKit/iOS/*.{h,m}'
   s.osx.source_files  = 'TRVSKit', 'TRVSKit/OSX/*.{h,m}'
   s.osx.deployment_target = '10.9'
