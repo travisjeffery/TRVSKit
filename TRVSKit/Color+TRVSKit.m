@@ -1,5 +1,5 @@
 //
-//  PlatformColor+TRVSKit.m
+//  TRVSColor+TRVSKit.m
 //  TRVSKit
 //
 //  Created by Travis Jeffery on 11/1/13.
@@ -25,9 +25,9 @@
 
 @end
 
-@implementation PlatformColor (TRVSKit)
+@implementation TRVSColor (TRVSKit)
 
-+ (PlatformColor *)trvs_colorWithHexString:(NSString *)hexString {
++ (instancetype)trvs_colorWithHexString:(NSString *)hexString {
 	if ([hexString hasPrefix:@"#"]) {
 		hexString = [hexString substringFromIndex:1];
 	} else if ([hexString hasPrefix:@"0x"]) {
@@ -54,7 +54,7 @@
 	CGFloat blue = [[hexString substringWithRange:NSMakeRange(4, 2)] trvs_hexValue] / 255.0f;
 	CGFloat alpha = [[hexString substringWithRange:NSMakeRange(6, 2)] trvs_hexValue] / 255.0f;
     
-	return [PlatformColor colorWithRed:red green:green blue:blue alpha:alpha];
+	return [self.class colorWithRed:red green:green blue:blue alpha:alpha];
 }
 
 - (CGFloat)trvs_red {

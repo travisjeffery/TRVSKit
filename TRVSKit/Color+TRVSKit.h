@@ -1,5 +1,5 @@
 //
-//  PlatformColor+TRVSKit.h
+//  TRVSColor+TRVSKit.h
 //  TRVSKit
 //
 //  Created by Travis Jeffery on 11/1/13.
@@ -10,17 +10,18 @@
 
 #if TARGET_OS_IPHONE
 
-#define PlatformColor UIColor
+#define TRVSColor UIColor
+#define TRVSColor UIColor
 
 #elif TARGET_OS_MAC && !TARGET_OS_IPHONE
 
-#define PlatformColor NSColor
+#define TRVSColor NSColor
 
 #endif
 
-@interface PlatformColor (TRVSKit)
+@interface TRVSColor (TRVSKit)
 
-+ (PlatformColor *)trvs_colorWithHexString:(NSString *)hexString;
++ (TRVSColor *)trvs_colorWithHexString:(NSString *)hexString;
 
 - (CGFloat)trvs_alpha;
 - (CGFloat)trvs_red;
