@@ -10,7 +10,7 @@
 
 @interface NSDictionary (TRVSKit)
 
-+ (NSDictionary *)dictionaryByMergingDict1:(NSDictionary *)dict1 dict2:(NSDictionary *)dict2;
-- (NSDictionary *)dictionaryByMergingWithDictionary:(NSDictionary *)dict;
++ (NSDictionary *)trvs_dictionaryByMergingDictionary:(NSDictionary *)dict1 withDictionary:(NSDictionary *)dict2;
+- (NSDictionary *)trvs_dictionaryByMergingWithDictionary:(NSDictionary *)dict;
 
 @end

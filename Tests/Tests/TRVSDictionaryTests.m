@@ -17,7 +17,7 @@
 
 - (void)testMerging {
     NSDictionary *result = @{ @"network": @{ @"wifi": @YES } };
-    result = [result dictionaryByMergingWithDictionary:@{ @"network": @{ @"bluetooth": @NO }}];
+    result = [result trvs_dictionaryByMergingWithDictionary:@{ @"network": @{ @"bluetooth": @NO }}];
     NSDictionary *expected = @{ @"network": @{ @"wifi": @YES, @"bluetooth": @NO } };
     
     XCTAssertEqualObjects(expected, result);
