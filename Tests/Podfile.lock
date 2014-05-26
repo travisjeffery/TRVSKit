@@ -1,5 +1,9 @@
 PODS:
-  - TRVSKit (0.0.7)
+  - Expecta (0.3.0)
+  - TRVSKit (0.0.8):
+    - TRVSKit/TRVSAssertions
+  - TRVSKit/TRVSAssertions (0.0.8):
+    - Expecta (~> 0.3.0)
   - TRVSMonitor (0.0.2)
 
 DEPENDENCIES:
@@ -11,7 +15,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  TRVSKit: 9135a16bca18f8d1268acad9be15ea6e2c1a16f0
-  TRVSMonitor: c2960f87bb2a1b4d2f3fba17f61c1c5256860bd2
+  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
+  TRVSKit: 06ba1d41f8a64007a8d575f812d257fe420952fd
+  TRVSMonitor: 77436a7907c048cc9213d9c69a74fbe78f452c22
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1

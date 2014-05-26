@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Expecta/Expecta.h>
 
 void trvs_assertNotificationsObserved(id self, void (^block)(void), id firstNotification, ...) {
     NSCParameterAssert(block != nil);
@@ -29,8 +30,8 @@ void trvs_assertNotificationsObserved(id self, void (^block)(void), id firstNoti
     va_end(args);
     
     block();
-    
-    expect(actualObservedCount).will.equal(expectedObservedCount);
+
+    EXP_expect(actualObservedCount).will.equal(expectedObservedCount);
     
     for (id observer in observers) [NSNotificationCenter.defaultCenter removeObserver:observer];
 }
