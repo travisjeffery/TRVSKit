@@ -7,3 +7,4 @@
 //
 
 void trvs_assertNotificationsObserved(id self, void (^block)(void), id firstNotification, ...);
+void trvs_assertNotificationsNotObserved(id self, void (^block)(void), id firstNotification, ...);
