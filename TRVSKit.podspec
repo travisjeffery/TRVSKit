@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = "TRVSKit"
-  s.version = "0.0.8"
+  s.version = "0.0.9"
   s.summary = "A collection of useful APIs for iOS." 
   s.homepage = "https://github.com/travisjeffery/TRVSKit"
   s.license = 'MIT'
   s.author = { "Travis Jeffery" => "tj@travisjeffery.com" }
-  s.source       = { :git => "https://github.com/travisjeffery/TRVSKit.git", :tag => "0.0.8" }
+  s.source       = { :git => "https://github.com/travisjeffery/TRVSKit.git", :tag => "0.0.9" }
   s.source_files  = 'TRVSKit', 'TRVSKit/*.{h,m}'
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.ios.deployment_target = '6.0'

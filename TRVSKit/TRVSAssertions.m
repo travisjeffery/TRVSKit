@@ -24,7 +24,7 @@ void trvs_assertNotificationsObserved(id self, void (^block)(void), id firstNoti
         
         [observers addObject:[NSNotificationCenter.defaultCenter addObserverForName:currentNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
                               ++actualObservedCount;
-                              }]];
+        }]];
     }
     
     va_end(args);
