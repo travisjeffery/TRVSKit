@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "TRVSKit"
-  s.version = "0.0.9"
+  s.version = "0.0.10"
   s.summary = "A collection of useful APIs for iOS." 
   s.homepage = "https://github.com/travisjeffery/TRVSKit"
   s.license = 'MIT'
@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'TRVSAssertions' do |ss|
+    ss.ios.deployment_target = '5.0'
     ss.source_files = 'TRVSKit/TRVSAssertions.{h,m}'
     ss.dependency 'Expecta', '~> 0.3.0'
   end
